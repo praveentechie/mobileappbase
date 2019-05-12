@@ -1,12 +1,17 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {Button, StyleSheet, Text, View} from 'react-native';
 
 export default class WelcomeScreen extends Component {
   render() {
+    const {navigate} = this.props.navigation;
+
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to timer app!</Text>
         <Text style={styles.welcome}>You are in welcome page with nav</Text>
+        <Button title="View AP's profile"
+          onPress={() => navigate('UserInfoScreen', {name: 'AP  '})}
+        />
       </View>
     );
   }
