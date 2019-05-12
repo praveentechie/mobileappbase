@@ -11,6 +11,9 @@ add to package.json scripts for enabling hot reload in real devices
 See src/screens/AppNavigator.js
 
 ## PROJECT STRUCTURE
+### FOLDERS
+- library - util functions
+- res - all resouces (colors, string, images...)
 ### IMPORTING
 create a package.json file in utils folder e.g. library and import as module, no need to provide exact path
 ```

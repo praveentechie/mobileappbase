@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Button, StyleSheet, Text, View} from 'react-native';
+import palette from 'res/palette';
 
 export default class WelcomeScreen extends Component {
   render() {
@@ -25,6 +26,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5FCFF',
   },
   welcome: {
+    ...palette.heading,
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
